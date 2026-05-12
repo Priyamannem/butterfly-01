@@ -38,8 +38,8 @@ export function Footer() {
           {/* ── Brand column ─────────────────────────────────── */}
           <div>
             <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-11 h-11 rounded-2xl bg-white flex items-center justify-center p-1">
-                <img src={butterflyLogo} alt="" className="w-full h-full object-contain" />
+              <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center overflow-hidden border-2 border-white/20 shadow-lg">
+                <img src={butterflyLogo} alt="" className="w-full h-full object-contain scale-[1.35] translate-y-[0.5px]" />
               </div>
               <div>
                 {/* Clinic name */}
