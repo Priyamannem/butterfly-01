@@ -49,7 +49,6 @@ function Index() {
             loop
             muted
             playsInline
-            controls
           />
         </div>
       </section>
