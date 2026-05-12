@@ -74,7 +74,8 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <div className="min-h-screen flex flex-col">
-        {/* Main content — navbar removed as requested */}
+        <Navbar />
+        {/* Main content — navbar is fixed so no top padding needed (Hero handles its own offset) */}
         <main className="flex-1">
           <Outlet />
         </main>
