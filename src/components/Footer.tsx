@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Facebook, Instagram, Twitter, Youtube, Mail, Phone, MapPin } from "lucide-react";
 import { Butterfly, Flower } from "./JungleDecor";
 import { SITE, FOOTER } from "@/content";
+import butterflyLogo from "@/assets/butterfly-logo.png";
 
 export function Footer() {
   return (
@@ -37,8 +38,8 @@ export function Footer() {
           {/* ── Brand column ─────────────────────────────────── */}
           <div>
             <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-11 h-11 rounded-2xl bg-gradient-warm flex items-center justify-center">
-                <Butterfly size={28} color="white" />
+              <div className="w-11 h-11 rounded-2xl bg-white flex items-center justify-center">
+                <img src={butterflyLogo} alt="" className="w-9 h-9 object-contain" />
               </div>
               <div>
                 {/* Clinic name */}
