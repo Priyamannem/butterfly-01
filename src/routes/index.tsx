@@ -40,15 +40,16 @@ function Index() {
           <SectionDivider />
         </div>
 
-        {/* Fixed video container for full reel visibility (no cutting) */}
-        <div className="relative z-10 max-w-md mx-auto aspect-[9/16] rounded-[2.5rem] overflow-hidden shadow-glow border-8 border-white ring-1 ring-black/5">
+        {/* Standard web-size landscape container with object-contain for full vertical reel visibility */}
+        <div className="relative z-10 max-w-5xl mx-auto aspect-video rounded-[2.5rem] overflow-hidden shadow-glow border-8 border-white ring-1 ring-black/5 bg-black/90">
           <video
             src={reel}
-            className="w-full h-full object-contain bg-black"
+            className="w-full h-full object-contain"
             autoPlay
             loop
             muted
             playsInline
+            controls
           />
         </div>
       </section>
