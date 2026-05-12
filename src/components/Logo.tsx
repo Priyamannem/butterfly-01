@@ -8,12 +8,12 @@ export function Logo() {
       {/* ── Butterfly icon badge ─────────────────────────────── */}
       <div className="relative">
         <div
-          className="w-14 h-14 rounded-full flex items-center justify-center shadow-[0_4px_20px_rgba(120,50,200,0.25)] group-hover:scale-105 transition-all duration-500 overflow-hidden bg-white border-2 border-[oklch(0.9_0.05_300)]"
+          className="w-16 h-16 rounded-full flex items-center justify-center shadow-[0_4px_20px_rgba(120,50,200,0.25)] group-hover:scale-105 transition-all duration-500 overflow-hidden bg-white border-2 border-[oklch(0.9_0.05_300)]"
         >
           <img 
             src={butterflyLogo} 
             alt={SITE.name} 
-            className="w-full h-full object-contain scale-[1.35] translate-y-[1px]"
+            className="w-full h-full object-contain scale-[2.2] -translate-y-[2px]"
           />
         </div>
         {/* Pulsing dot */}
