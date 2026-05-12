@@ -42,21 +42,26 @@ function Index() {
           <SectionDivider />
         </div>
 
-        {/* Jungle-themed web-size container with animal mascots on the sides */}
-        <div className="relative z-10 max-w-5xl mx-auto aspect-video rounded-[2.5rem] overflow-hidden shadow-glow border-8 border-white ring-1 ring-black/5 bg-gradient-to-br from-[oklch(0.92_0.12_145)] to-[oklch(0.95_0.08_165)]">
-          {/* Internal Jungle Decorations for the 'sides' */}
-          <img src={monkey} alt="" className="absolute left-4 bottom-4 w-24 md:w-32 animate-sway origin-top opacity-80" />
-          <img src={giraffe} alt="" className="absolute right-4 top-4 w-32 md:w-40 animate-float-slow opacity-80" />
-          <Butterfly size={40} color="oklch(0.72 0.20 300)" className="absolute top-10 right-[20%] animate-float-slow opacity-40" />
+        {/* Jungle-themed container with optimized video clarity */}
+        <div className="relative z-10 max-w-5xl mx-auto aspect-video rounded-[2.5rem] overflow-hidden shadow-glow border-8 border-white ring-1 ring-black/5 bg-white">
+          {/* Background Layer */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[oklch(0.92_0.12_145)] to-[oklch(0.95_0.08_165)] opacity-100" />
+          
+          {/* Internal Jungle Decorations */}
+          <img src={monkey} alt="" className="absolute left-4 bottom-4 w-24 md:w-32 animate-sway origin-top opacity-80 z-20 pointer-events-none" />
+          <img src={giraffe} alt="" className="absolute right-4 top-4 w-32 md:w-40 animate-float-slow opacity-80 z-20 pointer-events-none" />
+          <Butterfly size={40} color="oklch(0.72 0.20 300)" className="absolute top-10 right-[20%] animate-float-slow opacity-40 z-20" />
 
+          {/* High-Clarity Video Element */}
           <video
             src={reel}
-            className="relative z-10 w-full h-full object-contain"
+            className="relative z-10 w-full h-full object-contain shadow-2xl"
             autoPlay
             loop
             muted
             playsInline
             controls
+            style={{ imageRendering: 'auto', transform: 'translateZ(0)' }}
           />
         </div>
       </section>
