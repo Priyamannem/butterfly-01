@@ -13,7 +13,7 @@ export function Logo() {
           <img 
             src={butterflyLogo} 
             alt={SITE.name} 
-            className="w-10 h-10 object-contain"
+            className="w-full h-full object-contain p-1"
           />
         </div>
         {/* Pulsing dot */}
