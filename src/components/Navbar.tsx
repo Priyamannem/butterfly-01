@@ -18,12 +18,12 @@ export function Navbar() {
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
-        scrolled ? "py-2" : "py-5"
+        scrolled ? "py-1.5" : "py-3"
       }`}
     >
       <nav className="mx-auto max-w-7xl px-5">
         <div
-          className={`rounded-full px-6 py-3 flex items-center justify-between transition-all duration-300 ${
+          className={`rounded-full px-6 py-1.5 flex items-center justify-between transition-all duration-300 ${
             scrolled
               ? "bg-white/95 backdrop-blur-md shadow-[0_8px_30px_rgba(0,0,0,0.12)] border border-white/20"
               : "bg-white/90 backdrop-blur-sm shadow-[0_4px_20px_rgba(0,0,0,0.1)] border border-white/50"
