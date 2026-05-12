@@ -39,7 +39,7 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2.5 mb-4">
               <div className="w-14 h-14 rounded-full bg-white flex items-center justify-center overflow-hidden border-2 border-white/20 shadow-lg">
-                <img src={butterflyLogo} alt="" className="w-full h-full object-contain scale-[2.2] translate-y-[7px]" />
+                <img src={butterflyLogo} alt="" className="w-full h-full object-contain scale-[2.8] translate-y-[10px]" />
               </div>
               <div>
                 {/* Clinic name */}
