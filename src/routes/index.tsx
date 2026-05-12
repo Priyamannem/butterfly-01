@@ -21,6 +21,9 @@ function Index() {
       <Hero />
       <Stats />
       
+      {/* ── Doctor Section (Now moved first) ─────────────────── */}
+      <Doctor />
+
       {/* ── Highlighted Reel Section ─────────────────────────── */}
       <section className="relative max-w-7xl mx-auto px-6 py-24 my-10 overflow-hidden bg-gradient-to-br from-[oklch(0.95_0.08_95)] to-[oklch(0.97_0.04_165)] rounded-[3rem]">
         <Butterfly size={50} color="oklch(0.72 0.20 300)" className="absolute top-10 left-[10%] animate-float-slow opacity-60" />
@@ -37,10 +40,11 @@ function Index() {
           <SectionDivider />
         </div>
 
-        <div className="relative z-10 max-w-5xl mx-auto aspect-video rounded-[2.5rem] overflow-hidden shadow-glow border-8 border-white ring-1 ring-black/5">
+        {/* Fixed video container for full reel visibility (no cutting) */}
+        <div className="relative z-10 max-w-md mx-auto aspect-[9/16] rounded-[2.5rem] overflow-hidden shadow-glow border-8 border-white ring-1 ring-black/5">
           <video
             src={reel}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain bg-black"
             autoPlay
             loop
             muted
@@ -50,7 +54,6 @@ function Index() {
         </div>
       </section>
 
-      <Doctor />
       <Reviews />
       <InstagramFeed />
       <Blogs />
