@@ -10,6 +10,8 @@ import { InstagramFeed } from "@/components/sections/InstagramFeed";
 import reel from "@/assets/reel.mp4";
 import { SectionDivider, Butterfly, Flower } from "@/components/JungleDecor";
 import lion from "@/assets/lion.png";
+import monkey from "@/assets/monkey.png";
+import giraffe from "@/assets/giraffe.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -40,11 +42,16 @@ function Index() {
           <SectionDivider />
         </div>
 
-        {/* Standard web-size landscape container with object-contain for full vertical reel visibility */}
-        <div className="relative z-10 max-w-5xl mx-auto aspect-video rounded-[2.5rem] overflow-hidden shadow-glow border-8 border-white ring-1 ring-black/5 bg-black/90">
+        {/* Jungle-themed web-size container with animal mascots on the sides */}
+        <div className="relative z-10 max-w-5xl mx-auto aspect-video rounded-[2.5rem] overflow-hidden shadow-glow border-8 border-white ring-1 ring-black/5 bg-gradient-to-br from-[oklch(0.92_0.12_145)] to-[oklch(0.95_0.08_165)]">
+          {/* Internal Jungle Decorations for the 'sides' */}
+          <img src={monkey} alt="" className="absolute left-4 bottom-4 w-24 md:w-32 animate-sway origin-top opacity-80" />
+          <img src={giraffe} alt="" className="absolute right-4 top-4 w-32 md:w-40 animate-float-slow opacity-80" />
+          <Butterfly size={40} color="oklch(0.72 0.20 300)" className="absolute top-10 right-[20%] animate-float-slow opacity-40" />
+
           <video
             src={reel}
-            className="w-full h-full object-contain"
+            className="relative z-10 w-full h-full object-contain"
             autoPlay
             loop
             muted
